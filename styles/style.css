@@ -85,3 +85,54 @@ height: 117;
     font-size: 16px;
     color: #562EFF ;
 }
+/* ---------------- */
+/* courses style */
+/* ----------------- */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
+.courses .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+  display: grid;
+    align-items: center;
+    justify-content:space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #ffc014;
+}
+.fa-star.emty{
+    color: #AEAEAE;
+}
+.course-duration{
+    background-color: #ED6B4F;
+    border-radius: 5px;
+  
+}
+
+/* ------------ */
+/* media Queris */
+/* ---------------- */
+
+/* Mobile divise */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .players .blogs .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+   
+    
+}
+    
